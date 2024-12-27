@@ -1,0 +1,75 @@
+.explanation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* 전체 화면 높이 사용 */
+    width: 100vw; /* 전체 화면 너비 사용 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 0;
+    box-sizing: border-box; /* 패딩과 마진이 요소 크기에 영향 주지 않도록 */
+    background-color: #f5f5f5; /* 배경색은 필요에 따라 변경 */
+}
+
+.screen-content {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.screen-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.screen-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.content-box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #34b233;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.next-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.skip-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.step-indicator {
+    background-color: #34b233;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

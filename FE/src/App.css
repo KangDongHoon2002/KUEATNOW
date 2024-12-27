@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw; /* 전체 화면 너비 */
+  overflow: hidden; /* 스크롤 숨김 */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* 전체 화면 너비 */
+  margin: 0;
+  padding: 0;
+}

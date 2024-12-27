@@ -1,0 +1,113 @@
+/* 전체 컨테이너 */
+.user-limit-container {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 375px;
+    height: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    padding: 0 0 0 0; /* 상하 여백 */
+    background-color: #ffffff; /* 필요에 따라 배경색 설정 */
+    position: fixed; /* 하단에 고정 */
+    top: 0; /* 화면의 맨 아래에 위치 */
+    left: 50%; /* 화면 가로 중앙에 위치 */
+    transform: translateX(-50%); /* 가로 중앙 정렬 */
+  }
+  /* 로고 섹션 */
+  .logo-section {
+    width: 100%;
+    text-align: center;
+    height: 88px;
+    margin-bottom: 20px;
+  }
+  
+  /* 섹션 공통 스타일 */
+  .section {
+    margin: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 0 !important;
+  }
+  
+  .section p {
+    font-size: 14px;
+    color: #757575;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* 가게 종류 버튼 */
+  .store-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .store-button.selected {
+    border-color: #f4a968 !important;
+    border-radius: 15px !important;
+    background-color: #fff3e0;
+  }
+  /* 예산 입력 */
+  .budget-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #e8e8e8;
+  }
+  
+  .budget-input-container input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+    background-color: #e8e8e8;
+  }
+  
+  .budget-input-container span {
+    margin-left: 5px;
+  }
+  
+  /* 다음으로 버튼 - UserLimitScreen2 전용 */
+  .user-limit-next-button {
+    width: 80%;
+    max-width: 337.5px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background-color: #f4a968;
+    margin: 20px 0 20px 0;
+    transition: background-color 0.3s;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .user-limit-next-button.active {
+    background-color: #f4a968;
+  }
+  
+  .user-limit-next-button:disabled {
+    cursor: not-allowed;
+  }
+  .store-button {
+    border-color: white !important;
+  }
+  

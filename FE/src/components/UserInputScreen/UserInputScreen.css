@@ -1,0 +1,91 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 10px;
+    background-color: #FAF8F6 !important; /* 전체 배경색 */
+    box-sizing: border-box;
+}
+
+.chat-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* 동그라미와 메시지 수직 정렬 */
+}
+
+.message.character {
+    justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.message.user {
+    justify-content: flex-end; /* 오른쪽 정렬 */
+}
+
+.circle.character {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffcc00; /* 캐릭터 동그라미 색상 */
+    margin-right: 10px;
+}
+
+.message-bubble {
+    max-width: 70%;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.character .message-bubble {
+    background-color: white !important;
+    color: #333;
+}
+
+.message.user .message-bubble {
+    background-color: #f4a460; /* 오른쪽 메시지 버블 색상 */
+    color: #fff;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: white; /* 입력창 주변 배경을 흰색으로 */
+    border-radius: 15px; /* 경계 둥글게 */
+    margin: 20px; /* 상하 여백 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.send-button {
+    padding: 10px 15px;
+    background-color: #f4a460; /* 버튼 색상 */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}

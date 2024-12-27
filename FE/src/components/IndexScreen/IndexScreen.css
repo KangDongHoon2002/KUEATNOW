@@ -1,0 +1,45 @@
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* 전체 화면 너비 */
+  background-color: #ffffff; /* 진한 갈색 배경색 */
+  box-sizing: border-box;
+  padding: 0; /* 패딩 제거 */
+  margin: 0; /* 여백 제거 */
+  overflow: hidden; /* 스크롤 숨김 */
+}
+.logo-text {
+  color: aliceblue;
+}
+.logo-box {
+  background-color: #d99a5f; /* 주황색 배경 */
+  width: 250px; /* 로고 박스 크기 */
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 50px; /* 버튼과의 간격 */
+}
+
+.tiger-logo {
+  width: 80%; /* 로고 크기 조정 */
+  height: auto;
+}
+
+.start-button {
+  max-width: 337.5px;
+  margin-top: 120px;
+  width: 80%;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #fff8da; /* 연한 크림색 */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 버튼 그림자 */
+}
