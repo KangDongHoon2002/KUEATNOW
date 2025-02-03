@@ -89,3 +89,125 @@
     margin-left: 10px;
     cursor: pointer;
 }
+ 
+
+/* 지역 선택 관련 스타일 */
+.region-selection-container {
+    margin: 20px;
+    text-align: center;
+}
+.region-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.region-button {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 2px solid #f4a460;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+}
+.region-button:hover {
+    background-color: #f4a460;
+    color: #fff;
+}
+.region-button.selected {
+    background-color: #f4a460;
+    color: #fff;
+    border: 2px solid #e69060;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.confirm-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f4a460;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.confirm-button:hover {
+    background-color: #e69060;
+}
+
+/* 식당 추천 관련 스타일 */
+.restaurant-selection-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.restaurant-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.restaurant-button {
+  background: linear-gradient(135deg, #f4a460, #e69060);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  min-width: 180px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.restaurant-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.restaurant-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.restaurant-summary {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.restaurant-button.restart {
+  background: #555;
+}
+.restaurant-button.restart:hover {
+  background: #444;
+}
+.completed-container {
+  text-align: center;
+  margin: 20px;
+}
+.restart-button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.restart-button:hover {
+  background-color: #444;
+}
+
+.restaurant-recommendation-message {
+    margin: 20px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f9f3e9;
+    border: 1px solid #f4a460;
+    border-radius: 10px;
+    color: #333;
+}
+
